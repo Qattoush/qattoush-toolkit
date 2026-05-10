@@ -196,11 +196,6 @@ OK "Cortana and web search in taskbar disabled"
 SafeReg "HKLM:\SOFTWARE\Policies\Microsoft\Windows\LocationAndSensors" "DisableLocation" DWord 1
 OK "Location tracking disabled"
 
-# Disable app access to camera/microphone silently
-SafeReg "HKLM:\SOFTWARE\Policies\Microsoft\Windows\AppPrivacy" "LetAppsAccessCamera"     DWord 2
-SafeReg "HKLM:\SOFTWARE\Policies\Microsoft\Windows\AppPrivacy" "LetAppsAccessMicrophone" DWord 2
-OK "Background app access to camera/mic blocked by policy"
-
 # Disable tailored experiences
 SafeReg "HKCU:\Software\Microsoft\Windows\CurrentVersion\Privacy" "TailoredExperiencesWithDiagnosticDataEnabled" DWord 0
 OK "Tailored experiences disabled"
